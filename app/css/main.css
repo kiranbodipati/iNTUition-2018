@@ -223,6 +223,8 @@ body {
       margin-top: 2%; }
     body .sponsors .gold img {
       max-height: 120px; }
+    body .sponsors .silver img {
+      max-height: 100px; }
     body .sponsors .title {
       padding: 20px; }
       body .sponsors .title img {
