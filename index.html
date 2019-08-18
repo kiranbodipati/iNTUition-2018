@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="app/css/main.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.17.0/lazyload.min.js"></script>
   <title>iNTUition 2018</title>
 </head>
@@ -32,9 +31,6 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Photos">Photos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#faq">FAQs</a>
@@ -96,67 +92,6 @@
       }
     }, 1000);
   </script>
-  <div class="col-12 slideshow" id="Photos">
-  <h1 style="padding-bottom: 10px">Photos of iNTUition 5.0</h1>
-  <img class="imgs" src="app/images/1.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/2.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/3.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/4.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/5.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/6.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/7.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/8.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/9.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/10.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/11.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/12.jpg" width=50% height=10%>
-  <div>
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-  <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-  <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-  <button class="w3-button demo" onclick="currentDiv(6)">6</button>
-  <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
-  <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
-  <button class="w3-button demo" onclick="currentDiv(9)">9</button>
-  <button class="w3-button demo" onclick="currentDiv(10)">10</button> 
-  <button class="w3-button demo" onclick="currentDiv(11)">11</button> 
-  <button class="w3-button demo" onclick="currentDiv(12)">12</button>
-</div>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("imgs");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
   <div class="container">
     <div class="col-12 faq" id="faq">
       <h1>Frequently Asked Questions</h1>
