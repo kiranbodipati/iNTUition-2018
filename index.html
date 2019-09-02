@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="app/css/main.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/10.17.0/lazyload.min.js"></script>
-  <title>iNTUition 2018</title>
+  <title>iNTUition 2019</title>
 </head>
 
 <body>
@@ -58,17 +58,17 @@
   <div class="jumbotron text-center vertical-center">
     <h1 class="main-title animated fadeIn">
       <img src="app/images/lightbulb.svg" />
-    I<span class="white-outline"><a href="http://www.ntu.edu.sg" target="_blank">NTU</a></span>ITION<span class="white-outline">5.0</span></h1><br>
+    I<span class="white-outline"><a href="http://www.ntu.edu.sg" target="_blank">NTU</a></span>ITION<span class="white-outline">6.0</span></h1><br>
     <h5 class="sub-title animated fadeIn slow delay-3s">Calling all hackers and makers!</h5>
-    <h5 class="sub-sub-title animated fadeIn slower delay-4s">13-14<sup>th</sup> October 2018 @ NTU, Singapore.</h5>
-    <h5 class="sub-sub-title animated fadeIn slower delay-4s">The event is now over! <br>Check out the winning submissions below.</h5>
-    <a class="btn btn-outline-primary btn-lg animated fadeIn slower delay-5s" href="https://intuitionv5.devpost.com/submissions" target="_blank">DevPost Submissions</a>
+    <h5 class="sub-sub-title animated fadeIn slower delay-4s">19<sup>th</sup>-20<sup>th</sup> October 2019 @ NTU, Singapore.</h5>
+    <p id="demo" style="color:white;"> </p>
+    <a class="btn btn-outline-primary btn-lg animated fadeIn slower delay-5s" href="" target="_blank">Register Now!</a>
 
 
   </div>
   <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("October 13, 2018 11:00:00").getTime();
+    var countDownDate = new Date("October 19, 2019 11:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -86,7 +86,7 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Display the result in the element with id="demo"
-      document.getElementById("demo sub-sub-title").innerHTML = "<span class='bordered'>" + days + "D</span> " + "<span class='bordered'>" + hours + "H</span> " +
+      document.getElementById("demo").innerHTML = "<span class='bordered'>" + days + "D</span> " + "<span class='bordered'>" + hours + "H</span> " +
         "<span class='bordered'>" + minutes + "M</span> " + "<span class='bordered'>" + seconds + "S</span> ";
 
       // If the count down is finished, write some text
