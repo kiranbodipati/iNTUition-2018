@@ -96,66 +96,6 @@
       }
     }, 1000);
   </script>
-  <div class="col-12 slideshow" id="Photos">
-  <h1 style="padding-bottom: 10px">Photos of iNTUition 5.0</h1>
-  <img class="imgs" src="app/images/1.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/2.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/3.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/4.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/5.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/6.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/7.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/8.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/9.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/10.jpeg" width=50% height=10%>
-  <img class="imgs" src="app/images/11.jpg" width=50% height=10%>
-  <img class="imgs" src="app/images/12.jpg" width=50% height=10%>
-  <div>
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
-  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
-  <button class="w3-button demo" onclick="currentDiv(3)">3</button>
-  <button class="w3-button demo" onclick="currentDiv(4)">4</button> 
-  <button class="w3-button demo" onclick="currentDiv(5)">5</button> 
-  <button class="w3-button demo" onclick="currentDiv(6)">6</button>
-  <button class="w3-button demo" onclick="currentDiv(7)">7</button> 
-  <button class="w3-button demo" onclick="currentDiv(8)">8</button> 
-  <button class="w3-button demo" onclick="currentDiv(9)">9</button>
-  <button class="w3-button demo" onclick="currentDiv(10)">10</button> 
-  <button class="w3-button demo" onclick="currentDiv(11)">11</button> 
-  <button class="w3-button demo" onclick="currentDiv(12)">12</button>
-</div>
-</div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("imgs");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
 
   <div class="container">
     <div class="col-12 faq" id="faq">
@@ -405,6 +345,68 @@ function showDivs(n) {
       </div>
     </div>
   </div>
+
+  <div class="col-12 slideshow background-default" id="Photos">
+    <h1 class ="text-white" style="padding: 40px;">Photos of iNTUition 5.0</h1>
+    <img class="imgs centerBlock" src="app/images/1.jpg" >
+    <img class="imgs centerBlock" src="app/images/2.jpg" >
+    <img class="imgs centerBlock" src="app/images/3.jpeg" >
+    <img class="imgs centerBlock" src="app/images/4.jpeg" >
+    <img class="imgs centerBlock" src="app/images/5.jpg" >
+    <img class="imgs centerBlock" src="app/images/6.jpg" >
+    <img class="imgs centerBlock" src="app/images/7.jpeg" >
+    <img class="imgs centerBlock" src="app/images/8.jpeg" >
+    <img class="imgs centerBlock" src="app/images/9.jpeg" >
+    <img class="imgs centerBlock" src="app/images/10.jpeg" >
+    <img class="imgs centerBlock" src="app/images/11.jpg" >
+    <img class="imgs centerBlock" src="app/images/12.jpg" >
+    <div>
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(1)">1</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(2)">2</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(3)">3</button>
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(4)">4</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(5)">5</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(6)">6</button>
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(7)">7</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(8)">8</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(9)">9</button>
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(10)">10</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(11)">11</button> 
+      <button class="w3-button demo text-white spacing-bottom" onclick="currentDiv(12)">12</button>
+  </div>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("imgs");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+
   <footer class="vertical-center">
     <h5 class="footer-main">This hackathon is a joint collaboration by <a href="http://www.ntuoss.com" target="_blank">NTU Open Source Society</a> and <a href="http://www.ieeentu.com/" target="_blank">IEEE NTU</a>.</h5>
     <h5>Made with <i class="fas fa-heart"></i> by <a href="http://www.github.com/kunmishra2599" target="_blank" >Kunal Mishra</a>.</h5>
